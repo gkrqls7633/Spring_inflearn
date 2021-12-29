@@ -42,7 +42,7 @@ public class HelloController {
 		private String name;
 
 		public String getName() {
-			return name+ "hakbintest";
+			return name+ "hakbintest2";
 		}
 
 		public void setName(String name) {
