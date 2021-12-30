@@ -27,7 +27,7 @@ public class MemberServiceTest {
 	}
 	
 	@Test
-	void È¸¿ø°¡ÀÔ() {
+	void íšŒì›ê°€ì…() {
 		//given
 		Member member = new Member();
 		member.setName("hello");
@@ -41,7 +41,7 @@ public class MemberServiceTest {
 	}
 	
 	@Test
-	public void Áßº¹_È¸¿ø_¿¹¿Ü() {
+	public void ì¤‘ë³µ_íšŒì›_ì˜ˆì™¸() {
 		//given
 		Member member1 = new Member();
 		member1.setName("spring");
@@ -57,7 +57,7 @@ public class MemberServiceTest {
 //			memberService.join(member2);
 //			fail();
 //		}catch (IllegalStateException e) {
-//			assertThat(e.getMessage()).isEqualTo("ÀÌ¹Ì Á¸ÀçÇÏ´Â È¸¿øÀÔ´Ï´Ù.");
+//			assertThat(e.getMessage()).isEqualTo("ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ È¸ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 //			
 //		}
 //		
