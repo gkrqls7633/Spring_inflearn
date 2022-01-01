@@ -20,11 +20,11 @@ public class MemberService {
 	}
 	
 	/**
-	 * È¸¿ø °¡ÀÔ
+	 * È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	 */
 	
 	public Long join(Member member) {
-		// °°Àº ÀÌ¸§ÀÌ ÀÖ´Â Áßº¹ È¸¿ø x
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ßºï¿½ È¸ï¿½ï¿½ x
 		validateDuplicateMember(member);
 		
 		memberRepository.save(member);
@@ -34,12 +34,12 @@ public class MemberService {
 	private void validateDuplicateMember(Member member) {
 		memberRepository.findByName(member.getName())
 		.ifPresent(m ->{
-			throw new IllegalStateException("ÀÌ¹Ì Á¸ÀçÇÏ´Â È¸¿øÀÔ´Ï´Ù.");
+			throw new IllegalStateException("ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ È¸ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 		});
 	}
 	
 	/**
-	 * ÀüÃ¼ È¸¿ø Á¶È¸
+	 * ï¿½ï¿½Ã¼ È¸ï¿½ï¿½ ï¿½ï¿½È¸
 	 */
 	public List<Member> findMembers() {
 		return memberRepository.findAll();
