@@ -1,7 +1,8 @@
 package com.example.hello.hellospring.domain;
 
-import javax.annotation.Generated;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
@@ -10,6 +11,8 @@ public class Member {
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Column(name = "username")
 	private String name;
 	
 	
